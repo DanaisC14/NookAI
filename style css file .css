@@ -1,0 +1,169 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    background-color: #f8f9fd;
+    color: #4b2c6d;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+}
+
+/* Background Elements */
+.bg-circle {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(80px);
+    z-index: -1;
+    opacity: 0.6;
+}
+
+.purple-top {
+    width: 450px;
+    height: 450px;
+    background: #dcd0ff;
+    top: -50px;
+    left: -100px;
+}
+
+.blue-bottom {
+    width: 350px;
+    height: 350px;
+    background: #e0eaff;
+    bottom: 50px;
+    left: 5%;
+}
+
+.green-right {
+    width: 500px;
+    height: 500px;
+    background: #d8f3ec;
+    top: 10%;
+    right: -150px;
+}
+
+.star-icon {
+    position: absolute;
+    bottom: 50px;
+    right: 50px;
+    font-size: 40px;
+    color: #ffffff;
+    opacity: 0.8;
+}
+
+/* Container & Header */
+.container {
+    width: 100%;
+    max-width: 850px;
+    text-align: center;
+    z-index: 10;
+}
+
+h1 {
+    font-size: 2.8rem;
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+
+.pill-nav {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 40px;
+}
+
+.nav-btn {
+    border: none;
+    padding: 10px 25px;
+    border-radius: 50px;
+    color: white;
+    font-weight: 600;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: transform 0.2s, opacity 0.2s;
+}
+
+.nav-btn:hover { opacity: 0.9; transform: scale(1.02); }
+.purple { background-color: #c5b3f1; }
+.blue { background-color: #8fa9c9; }
+.green { background-color: #a7d9c9; }
+
+/* The Glass Card */
+.glass-card {
+    background: linear-gradient(135deg, #c5b3f1 0%, #b8e9e1 100%);
+    border-radius: 40px;
+    padding: 60px 50px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.05);
+    color: white;
+}
+
+.affirmation {
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin-bottom: 30px;
+    line-height: 1.2;
+}
+
+.prompt {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: #4b2c6d;
+}
+
+/* Input Styles */
+textarea {
+    width: 100%;
+    max-width: 600px;
+    height: 120px;
+    border-radius: 20px;
+    border: none;
+    padding: 20px;
+    font-size: 1.2rem;
+    font-family: inherit;
+    outline: none;
+}
+
+.action-row {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.voice-btn {
+    background-color: #b8e9e1;
+    color: #4b2c6d;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 50px;
+    font-weight: 700;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.support-btn {
+    background-color: #7da0ca;
+    color: white;
+    border: none;
+    padding: 12px 60px;
+    border-radius: 50px;
+    font-weight: 700;
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+
+footer {
+    margin-top: 50px;
+    font-size: 0.85rem;
+    opacity: 0.6;
+}
